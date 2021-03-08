@@ -6,7 +6,7 @@ My website, soon to be populated with loads of goodies
 
 [98.css](https://github.com/jdan/98.css)
 
-[Amplifi music](soundcloud.com/amplifi-beats)
+[Amplifi music](https://soundcloud.com/amplifi-beats)
 
 
 ## Contributing
