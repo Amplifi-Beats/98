@@ -46,9 +46,9 @@ dragElement(document.getElementById("drag"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
+  if (document.getElementById(elmnt.class + "header")) {
     // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "drag").onmousedown = dragMouseDown;
+    document.getElementById(elmnt.class + "drag").onmousedown = dragMouseDown;
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
@@ -88,7 +88,7 @@ function dragElement(elmnt) {
 
 function myFunction() {
 
-        
+        //sc section
             //this is what you're looking for
             var x = document.getElementById("myDIV");
             if (x.style.display === "none") {
@@ -97,3 +97,16 @@ function myFunction() {
                 x.style.display = "none";
             }
         }
+
+//about me section
+        function About() {
+
+        
+          //this is what you're looking for
+          var x = document.getElementById("about");
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          } else {
+              x.style.display = "none";
+          }
+      }

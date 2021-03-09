@@ -150,7 +150,7 @@ body div {
 
     #desktop {
         height: 100%;
-        width: 100%;
+        max-width: 100%;
         padding: 0px;
         background: url("../img/ascii wallpaper.png"); 
         background-size: cover;
