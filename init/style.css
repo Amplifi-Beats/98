@@ -76,6 +76,12 @@ body div {
             vertical-align:central;
         }
 
+        #a {
+
+            color: black;
+            
+                }
+
         #startMenu .menuItem:hover {
             background-color:rgb(0,0,128);
             color:white;
@@ -143,11 +149,15 @@ body div {
     }
 
     #desktop {
-        height: calc(100% - 26px);
+        height: 100%;
         width: 100%;
-        padding: 10px;
+        padding: 0px;
         background: url("../img/ascii wallpaper.png"); 
+        background-size: cover;
+
+
     }
+
 
     #clock {
         display: inline-block;
@@ -166,6 +176,8 @@ body div {
         font-size: 10px;
         color: white;
     }
+
+
 
     
     .divider{
@@ -195,3 +207,8 @@ body div {
 		display: none;
 		
 	}
+
+
+
+
+ 
