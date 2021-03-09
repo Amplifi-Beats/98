@@ -8,6 +8,8 @@ My website, soon to be populated with loads of goodies
 
 [Amplifi music](https://soundcloud.com/amplifi-beats)
 
+[Windows 95, CSS & jQuery Flavor](https://codepen.io/ddietle/pen/zBjpVE)
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
