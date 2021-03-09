@@ -23,7 +23,7 @@ body div {
     }
 
     #start {
-	    background: url('img/start.png')
+	    background: url('../img/start.png')
 	    left center no-repeat;
         background-size: 17px 20px;
         text-align: right;
