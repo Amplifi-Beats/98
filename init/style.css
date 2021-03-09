@@ -9,6 +9,7 @@ body div {
         left: 0px;
         right: 0px;
         bottom: 0px;
+        background: url("../img/ascii wallpaper.png");
         background-color: rgb(0,128,131);
     }
 
@@ -143,9 +144,9 @@ body div {
 
     #desktop {
         height: calc(100% - 26px);
-        background-color: transparent;
         width: 100%;
         padding: 10px;
+        background: url("../img/ascii wallpaper.png"); 
     }
 
     #clock {
@@ -166,10 +167,7 @@ body div {
         color: white;
     }
 
-    #mycomputer {
-        background-color: transparent;
-    }
-
+    
     .divider{
         height:1px;
         border-top: ridge 1px white;
