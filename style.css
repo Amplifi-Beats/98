@@ -1,199 +1,58 @@
-body div {
-        font-family: 'MS Reference Sans Serif';
-        color: black;
-    }
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+  background: black;
+}
 
-    #win {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        background-color: rgb(0,128,131);
-    }
+pre {
+  padding: 0;
+  margin: 0;
 
-    #taskbar {
-        height: 26px;
-        background-color: rgb(192,192,192);
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        border-top: ridge 2px white;
-    }
+}
 
-    #start {
-	    background: url('img/start.png')
-	    left center no-repeat;
-        background-size: 17px 20px;
-        text-align: right;
-        font-weight: bolder;
-        font-size: 12px;
-        float: left;
-        width: 60px;
-        height: 21px;
-        display: inline-block;
-        padding: 1px 20px;
-        margin-left: 2px;
-        cursor: default;
-        user-select: none;
-    }
+.load {
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  background: black;
+}
 
-    #startMenu {
-        top: -238px;
-        left: 2px;
-        height: 240px;
-        width: 164px;
-        background-color: rgb(192,192,192);
-        position: absolute;
-        display: block;
-        border-top: ridge 3px white;
-        border-left: ridge 3px white;
-        border-bottom: ridge 2px black;
-        border-right: ridge 2px grey;
-    }
+.term {
+  font-family: monospace;
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 2em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-left: 20px;
+}
 
-        #startMenu #left {
-            width: 28px;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            bottom: 0px;
-            background-color: rgb(128,128,128);
-            font-family: Arial;
-            font-weight:900;
-            text-transform: capitalize;
-        }
+.term:after {
+  content: "_";
+  opacity: 1;
+  animation: cursor 1s infinite;
+}
 
-        #startMenu .menuItem {
-            color:black;
-            height: 32px;
-            width: 134px;
-            margin-left: 24px;
-            padding-left:10px;
-            padding-top:10px;
-            vertical-align:central;
-        }
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
-        #startMenu .menuItem:hover {
-            background-color:rgb(0,0,128);
-            color:white;
-        }
 
-        #startMenu .expander:after{
-            content:'▶';
-            float:right;
-            margin-right:5px;
-        }
 
-        #startMenu .menuItem:first-letter
-        {
-            text-decoration:underline;
-        }
-        
-        #startMenu #shutdown:first-letter
-        {
-            text-decoration:none;
-        }
 
-        
-            #startMenu #left .b {
-                color: rgb(192,192,192);
-                transform: rotateZ(-90deg);
-                transform-origin: center left;
-                display: inline-block;
-                width: 200px;
-                white-space: nowrap;
-                font-size: 20px;
-                margin-top: 215px;
-                margin-left: 10px;
-            }
-
-            #startMenu #left .num95 {
-                font-weight: 100 !important;
-                color: white;
-            }
-
-    .startRest {
-        border-top: ridge 2px white;
-        border-left: ridge 2px white;
-        border-bottom: ridge 2px black;
-        border-right: ridge 2px black;
-    }
-
-    .startClick {
-        border-top: inset 2px black;
-        border-left: inset 2px black;
-        border-bottom: inset 2px white;
-        border-right: inset 2px white;
-    }
-
-    #notifications {
-        margin-right: 2px;
-        border-top: inset 2px grey;
-        border-left: inset 2px grey;
-        border-bottom: inset 2px white;
-        border-right: inset 2px white;
-        padding-top: 17px;
-        display: inline-block;
-        float: right;
-        width: 52px;
-        height: 21px;
-    }
-
-    #desktop {
-        height: calc(100% - 26px);
-        background-color: transparent;
-        width: 100%;
-        padding: 10px;
-    }
-
-    #clock {
-        display: inline-block;
-        float: right;
-        margin-top: -13px;
-        font-size: 8px;
-    }
-
-    .desktopIcon {
-        margin: 2px 7px;
-        display: block;
-        height: 68px;
-        width: 50px;
-        text-align: center;
-        vertical-align: bottom;
-        font-size: 10px;
-        color: white;
-    }
-
-    #mycomputer {
-        background-color: transparent;
-    }
-
-    .divider{
-        height:1px;
-        border-top: ridge 1px white;
-        border-bottom: ridge 1px grey;
-        margin: 2px ;
-    }
-	
-	
-	#drag {
-		
-		position: absolute;
-		
-	}
-	
-	
-	#soundcloud-embed {
-		
-		border: 4px solid #c0c0c0;
-		position: absolute;
-		background-color: #c0c0c0;
-	
-	}
-	
-	#p.hidden {
-		display: none;
-		
-	}
