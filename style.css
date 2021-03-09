@@ -23,16 +23,17 @@ body div {
     }
 
     #start {
-        background: url(http://zombiechops.com/wp-content/uploads/2016/07/icon.png) left center no-repeat;
-        background-size: 17px 15px;
+	    background: url('img/start.png')
+	    left center no-repeat;
+        background-size: 17px 20px;
         text-align: right;
         font-weight: bolder;
         font-size: 12px;
         float: left;
-        width: 52px;
+        width: 60px;
         height: 21px;
         display: inline-block;
-        padding: 1px 2px;
+        padding: 1px 20px;
         margin-left: 2px;
         cursor: default;
         user-select: none;
