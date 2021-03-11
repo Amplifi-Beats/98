@@ -66,12 +66,7 @@
 	<div id="drag2">
 	 
 <div style="display:none;" id="myDIV">
- <!--	<div id="soundcloud-embed">
-	<iframe width="100%" height="300" scrolling="no" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/957789547&color=%23b6bcb0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 100%; color: #808080;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/amplifi-beats" title="ꋫꁒꉣ꒒ꂑꄘꂑ ꃃꍟꋫ꓅ꌚ" target="_blank" style="color: #808080; text-decoration: none;">ꋫꁒꉣ꒒ꂑꄘꂑ ꃃꍟꋫ꓅ꌚ</a> · <a href="https://soundcloud.com/amplifi-beats/self-defense-eminem-x-juice-wrld-type-beat" title="Self Defense - Eminem X Juice WRLD Type Beat" target="_blank" style="color: #808080; text-decoration: none;">Self Defense - Eminem X Juice WRLD Type Beat</a></div>
-	
-	</div>
-  Soundcloud
--->
+
 
 <div class="window" style="margin: 32px; width: 500px">
   <div class="title-bar">
@@ -105,7 +100,7 @@ utilised 98.css for my Windows 98 vibes. opened up Notepad (vanilla) and got to 
 10/3/2021: celebrated my birthday by adding a taskbar with a start menu (with a big thanks to David Dietle on Codepen)
 also added the splash screen, can't figure out how to layer it on top of the desktop, so I made it the index, then after you redirect to the main (init) page
 <br>
-11/3/2021: Added taskbar elements, made this about page "minimisable", showed some friends it, they seem to like it. Made the wallpaper which is the win98 wallpaper with my logo rendered in ascii. did that in a linux terminal (elementary default one, don't hate me).
+11/3/2021: Added taskbar elements, made this about page "minimisable", showed some friends it, they seem to like it. Made the wallpaper which is the win98 wallpaper with my logo rendered in ascii. did that in a linux terminal (elementary default one, don't hate me). Added Webamp! Thanks captbaritone for the project!
 
 </code>
 </p>
@@ -121,6 +116,93 @@ also added the splash screen, can't figure out how to layer it on top of the des
 
 </div>
 
+  
+<div id="drag3">
+
+<div id="MusicPlayer"style="display:none;" >
+  
+    <div id="app" style="height: 10vh">
+      <!-- Webamp will attempt to center itself within this div -->
+  </div>
+  <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+  <script>
+      const Webamp = window.Webamp;
+      const webamp = new Webamp({
+          initialTracks: [
+              {
+                  metaData: {
+                      artist: "Amplifi",
+                      title: "Windows 95 Startup"
+                  },
+                  // NOTE: Your audio file must be served from the same domain as your HTML
+                  // file, or served with permissive CORS HTTP headers:
+                  // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+                  url: "../music/startup.mp3",
+                  duration: 3
+              },
+              {
+                  metaData: {
+                      artist: "Gorillaz",
+                      title: "Feel Good Inc (C/U remix)"
+                  },
+                  url: "../music/feelgoodinc.mp3",
+                  duration: 235
+              },
+              {
+                  metaData: {
+                      artist: "Camila Cabello",
+                      title: "Havana (Amplifi Remix)"
+                  },
+                  url: "../music/havana.mp3",
+                  duration: 180
+              },
+
+              {
+                  metaData: {
+                      artist: "Dua Lipa",
+                      title: "Don't Start Now (Amplifi Remix)"
+                  },
+                  url: "../music/dontstartnow.mp3",
+                  duration: 176
+              },
+              {
+                  metaData: {
+                      artist: "Emma Holzer",
+                      title: "Queen (Amplifi Remix)"
+                  },
+                  url: "../music/Queen.mp3",
+                  duration: 178
+              },
+              {
+                  metaData: {
+                      artist: "Amplifi",
+                      title: "M0nstr"
+                  },
+                  url: "../music/M0nstr.mp3",
+                  duration: 123
+              },
+
+          ],
+      });
+
+      // Returns a promise indicating when it's done loading.
+      webamp.renderWhenReady(document.getElementById('app'));
+  </script>
+</body>
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+  
+</div>
+
+
+</div>
 	<!-- end of desktop space -->
 	 
 
@@ -149,7 +231,7 @@ also added the splash screen, can't figure out how to layer it on top of the des
 
         <div class="taskbarItem"> <button onclick="myFunction2()">Amplifi.exe</button> </div>
         <div class="taskbarItem"> <button onclick="myFunction()">About.vbs</button> </div>
-  
+        <div class="taskbarItem"> <button onclick="myFunction3()">Winamp</button> </div>
         
         <div id="notifications">
             <div id="clock"></div>

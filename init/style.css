@@ -179,7 +179,8 @@ body div {
     #clock {
         display: inline-block;
         float: right;
-        margin-top: -13px;
+        margin-top: -18px;
+        margin-right: 5px;
         font-size: 8px;
     }
 
@@ -237,5 +238,9 @@ z-index: 2;
  }
 
 
+#drag3 {
 
+position: absolute;
+z-index: 2;
+}
 
