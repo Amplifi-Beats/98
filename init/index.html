@@ -15,6 +15,7 @@
 <!-- partial:index.partial.html -->
 <div id="win">
     <div id="desktop">
+      <div id="amplifi.exe">
 	<div id="drag">
 	
          <div class="window" style="margin: 32px; width: 500px">
@@ -25,9 +26,8 @@
 
 
         <div class="title-bar-controls">
-          <button aria-label="Minimize"></button>
-          <button aria-label="Maximize"></button>
-          <button aria-label="Close"></button>
+        <!--try to implement a minimize and maybe a close-->
+ 
         </div>
       </div>
       <div class="window-body">
@@ -56,22 +56,54 @@
 	
 	</div>
 	
-	
+      </div>
 	
 
-	
+	<div id="drag2">
 	 
-	<div style="display:none;" id="myDIV">
-
-
-
-	<div id="soundcloud-embed">
+<div style="display:none;" id="myDIV">
+ <!--	<div id="soundcloud-embed">
 	<iframe width="100%" height="300" scrolling="no" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/957789547&color=%23b6bcb0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 100%; color: #808080;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/amplifi-beats" title="ꋫꁒꉣ꒒ꂑꄘꂑ ꃃꍟꋫ꓅ꌚ" target="_blank" style="color: #808080; text-decoration: none;">ꋫꁒꉣ꒒ꂑꄘꂑ ꃃꍟꋫ꓅ꌚ</a> · <a href="https://soundcloud.com/amplifi-beats/self-defense-eminem-x-juice-wrld-type-beat" title="Self Defense - Eminem X Juice WRLD Type Beat" target="_blank" style="color: #808080; text-decoration: none;">Self Defense - Eminem X Juice WRLD Type Beat</a></div>
 	
 	</div>
-	</div>
-<!-- <button onclick="myFunction()" id="myButton" value="Click To Open Instructions">Click To Open Instructions</button>
+  Soundcloud
 -->
+
+<div class="window" style="margin: 32px; width: 500px">
+  <div class="title-bar">
+    <div class="title-bar-text">
+      About.vbs
+    </div>
+
+
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Close" onclick="myFunction()" ></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <p>Hello, world!
+<br>
+I'm Amplifi! 
+<br>
+I make music, for myself and my band C/U. 
+</p>
+<br>
+
+<p>Amet irure duis dolor ex qui ex voluptate reprehenderit velit anim cillum. Cupidatat dolore incididunt voluptate fugiat est tempor ea cupidatat tempor dolore consequat. Anim tempor laboris labore minim minim laborum cupidatat duis amet sunt fugiat. Quis ea elit id voluptate non voluptate laborum labore consectetur Lorem amet Lorem esse. Proident voluptate nulla eu deserunt in. Sit dolor officia sit elit minim quis et reprehenderit dolore sit amet aliquip nisi adipisicing. Quis Lorem laborum minim laboris esse.
+<br>
+</p>
+
+    <section class="field-row" style="justify-content: flex-end">
+      
+    </section>
+  </div>
+</div>
+
+
+	</div>
+
+</div>
 
 	<!-- end of desktop space -->
 	 
@@ -89,13 +121,20 @@
             <div class="menuItem expander">Programs</div>
             <div class="menuItem expander">Documents</div>
             <div class="menuItem expander">Settings</div>
-            <div class="menuItem" onclick="About()">About</div>
+           <a href="#"> <div class="menuItem" onclick="myFunction()">About</div> </a>
 <!--           <a href="#"> <div class="menuItem" onclick="myFunction()">Music</div></a> -->
            <a href="https://github.com/amplifi-beats/"><div class="menuItem">Github</div></a>
             <a href="https://github.com/Amplifi-Beats/Amplifi-Beats.github.io"><div class="menuItem">Source</div></a>
             <div class="divider"></div>
             <div class="menuItem" id="shutdown">Sh<span style="text-decoration:underline;">u</span>t Down</div>
         </div>
+
+
+
+        <div class="taskbarItem"> <button onclick="myFunction2()">Amplifi.exe</button> </div>
+        <div class="taskbarItem"> <button onclick="myFunction()">About.vbs</button> </div>
+  
+        
         <div id="notifications">
             <div id="clock"></div>
         </div>

@@ -21,6 +21,7 @@ body div {
         left: 0px;
         right: 0px;
         border-top: ridge 2px white;
+        z-index: 5;
     }
 
     #start {
@@ -37,6 +38,7 @@ body div {
         padding: 1px 20px;
         margin-left: 2px;
         cursor: default;
+        z-index: auto;
         user-select: none;
     }
 
@@ -134,6 +136,21 @@ body div {
         border-bottom: inset 2px white;
         border-right: inset 2px white;
     }
+    
+
+
+    .taskbarItem{
+
+        text-align: justify;
+        font-size: 12px;
+
+        display: inline-block;
+        padding: 0px 5px;
+
+    }
+
+
+    }
 
     #notifications {
         margin-right: 2px;
@@ -187,13 +204,14 @@ body div {
         margin: 2px ;
     }
 	
-	
+
+		
 	#drag {
 		
 		position: absolute;
-		
+		z-index: 1;
+
 	}
-	
 	
 	#soundcloud-embed {
 		
@@ -211,4 +229,13 @@ body div {
 
 
 
- 
+
+ #drag2 {
+position: absolute;
+z-index: 2;
+
+ }
+
+
+
+
